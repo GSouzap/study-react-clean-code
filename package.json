@@ -1,11 +1,14 @@
 {
   "name": "clean-react",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repo is a study about clean code applied to react.",
   "author": "Gabriel de Souza Pinto (gsouzap.dev@gmail.com)",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --passWithNoTests",
+    "test:watch": "npm test -- --watch",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --coverage"
   },
   "keywords": [],
   "license": "ISC",
